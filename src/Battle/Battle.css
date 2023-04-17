@@ -1,0 +1,186 @@
+button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    background-color: #0073bc;
+    padding: 0.5% 4%;
+    color: #fff7d6;
+    border: 5px solid #73b9e5;
+    border-radius: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.menuButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #0073bc;
+    color: #fff7d6;
+    border: 5px solid #73b9e5;
+    border-radius: 30px;
+    margin: 0 10px;
+    padding: 10px 20px;
+}
+
+.pokeContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    /* padding-bottom: 5%; */
+}
+
+.pokemon {
+    max-width: 20vw;
+}
+
+.pokemonStats {
+    background-color: #fff7d6;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 30% 10% 5%;
+    align-items: flex-start;
+}
+.attackButton {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 40%;
+    margin-top: 5%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.attackMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+
+.startContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #fff7d6;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    height: 200px;
+    width: 250px;
+}
+.logContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: #fff7d6;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    height: 200px;
+    width: 500px;
+    overflow-y: scroll;
+}
+
+.healthBar {
+    width: 200px;
+    height: 10px;
+    border: 1px solid #10e001;
+    border-radius: 5px;
+}
+
+.healthLevel {
+    height: 100%;
+    background-color: #10e001;
+    transition: width 0.5s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+}
+.rotateLeft {
+    transform: rotate(180deg);
+    transition-duration: 1s;
+}
+
+.popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.popup button {
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #0073bc;
+    color: #fff7d6;
+    border: 5px solid #73b9e5;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px 10px;
+}
+.popup a {
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #0073bc;
+    color: #fff7d6;
+    border: 5px solid #73b9e5;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.popupMenu {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff7d6;
+    border: 3px solid #ffcc00;
+    border-radius: 10px;
+    height: 30vh;
+    z-index: 10;
+    width: 15vw;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(254, 248, 248, 0.751);
+    z-index: 9;
+}
+
+.popup h1 {
+    font-size: 50px;
+    color: black;
+    justify-content: center;
+    text-transform: capitalize;
+}
